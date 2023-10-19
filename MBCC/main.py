@@ -1,4 +1,4 @@
-import keras as k  
+#import keras as k  
 import numpy as np 
 import os 
 import pandas as pd
@@ -6,7 +6,7 @@ from PIL import Image
 
 ############################
 
-dataDir = '.\\RoutePics\\Bench\\'
+dataDir = "/RoutePics/Bench/"
 
 ############################
 
@@ -89,7 +89,6 @@ def countClimbs(set):
 def main():
     
     # Load the data
-    dataDir = '.\\RoutePics\\Bench\\'
     dataSet = scanFolder(dataDir)
     dataSet.pop(0)  # remove the first empty list
     # print(dataSet[0])
